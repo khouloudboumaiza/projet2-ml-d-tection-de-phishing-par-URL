@@ -1,0 +1,5 @@
+Contrôle de réalisme,Exigences,Taux de conformité (%)
+1. Préservation stricte du domaine enregistrable,reg_domain(adv) == reg_domain(orig),100.0
+2. Syntaxe et parsabilité structurelle de l'URL,"Parsable, schéma préservé, 1 seul '?', pas de '//'",100.0
+3. Longueur totale plausible (<= 2 000 caractères),len(adv) <= 2000,100.0
+4. Respect absolu des bornes de plausibilité (S.hi quantile 99.9 %),Toutes variables FEATURES <= S.hi,100.0

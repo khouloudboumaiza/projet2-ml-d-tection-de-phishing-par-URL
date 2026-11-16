@@ -1,0 +1,7 @@
+étape,lignes,raison
+lignes initiales,30000,
+valeurs manquantes (URL ou étiquette),0,inutilisables
+URL vides,0,inutilisables
+URL avec étiquettes contradictoires,0,ambiguës
+doublons (casse et '/' final ignorés),21,fuite train/test sinon
+lignes finales,29979,

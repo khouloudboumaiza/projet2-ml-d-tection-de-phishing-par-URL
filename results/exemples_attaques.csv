@@ -1,0 +1,11 @@
+URL originale,URL adverse (modifiée),Score initial,Score adverse,Coût,Opérations appliquées
+http://www.abystore.com,http://www.abystore.com?q=search,0.9989,0.0,1,add_query_q=search
+http://www.irdll.ml,http://www.irdll.ml?mode=view,0.9876,0.0,1,add_query_mode=view
+http://www.uksszopienice.pl,http://www.uksszopienice.pl?type=user,0.9972,0.0,1,add_query_type=user
+http://www.ketoanhaiphong.vn,http://www.ketoanhaiphong.vn?view=main,0.9889,0.0,1,add_query_view=main
+http://www.allscapeslandscapeinc.net,http://www.allscapeslandscapeinc.net?ref=home,0.7314,0.0001,1,add_query_ref=home
+http://www.signal.fbcode.co,http://www.signal.fbcode.co?src=web,0.9894,0.0,1,add_query_src=web
+https://bill-optus-au.com,https://bill-optus-au.com?utm_source=portal,0.9845,0.0018,1,add_query_utm_source=portal
+http://www.mtoi.org,http://www.mtoi.org?utm_source=portal,0.9955,0.0,1,add_query_utm_source=portal
+http://www.livigno.travel,http://www.livigno.travel?utm_source=portal,0.9999,0.0,1,add_query_utm_source=portal
+http://www.missouricitymagazine.com,http://www.missouricitymagazine.com?type=user,0.9597,0.0001,1,add_query_type=user

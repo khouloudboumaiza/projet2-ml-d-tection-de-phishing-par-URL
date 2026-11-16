@@ -1,0 +1,4 @@
+Scénario d'attaque,Oracle interrogé durant l'optimisation,Modèle ciblé final,Taux d'évasion (%)
+Attaque directe sur XGBoost (Requêtes directes à la cible),XGBoost,XGBoost,34.0
+Attaque directe sur Random Forest (Modèle substitut local),Random Forest,Random Forest,31.5
+Attaque par Transfert RF -> XGBoost (Zéro requête à la cible pendant la recherche),Random Forest,XGBoost,24.5
