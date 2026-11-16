@@ -1,0 +1,9 @@
+Composante URL,Opération,Catégorie,Coût,Variables FEATURES impactées,Justification
+Paramètres de requête (GET),add_query_param,Librement modifiable,1.0,"query_len, n_equal, n_amp, n_qmark, url_len, entropy_url","Les paramètres GET (?ref=home, &x=1) sont ignorés par le serveur ou utilisés pour le tracking sans altérer la page de phishing."
+Segment de chemin neutre,add_path_segment,Librement modifiable,1.0,"path_len, n_slash, n_path_segments, url_len, entropy_url","L'insertion de sous-dossiers virtuels (/en, /index, /app) est gérée par réécriture d'URL ou routage sans casser l'accès."
+Tirets ou chiffres dans chemin,add_path_hyphen_digits,Librement modifiable,1.0,"n_hyphen_url, n_digits_url, digit_ratio, max_digit_run","Ajouter un identifiant ou un tiret (-2024, -1) dans une route d'API ou de template est trivial côté backend."
+Retrait de mot sensible du chemin,remove_sensitive_path,Modifiable avec coût,2.0,"n_sensitive, n_path_sensitive, path_len",Nécessite de renommer des points de terminaison (endpoints) et complique l'ingénierie sociale (ex. masquer 'login' ou 'verify').
+Ajout d'un sous-domaine,add_subdomain,Modifiable avec coût,2.0,"n_sub, host_len, n_dots, host_entropy, n_host_tokens",Exige de créer un enregistrement DNS supplémentaire (A ou CNAME) sur la zone DNS contrôlée par l'attaquant.
+Domaine enregistrable (reg_domain),modifier le domaine,Non modifiable (Interdit),inf,"reg_domain, host_len, n_hyphen_host, host_digit_ratio",Changer le domaine enregistrable (ex. banque.com) ferait pointer l'URL vers un domaine non contrôlé par l'attaquant.
+Domaine de premier niveau (TLD),changer de TLD,Non modifiable (Interdit),inf,"tld_len, host_len",Le TLD est fixé par l'achat du nom de domaine ; le modifier brise la résolution DNS du site adverse.
+Schéma protocolaire,http <-> https,Non modifiable (Interdit),inf,is_https,Défini par l'infrastructure serveur et le certificat SSL ; exclu du profil v2 pour éviter les raccourcis de collecte.
